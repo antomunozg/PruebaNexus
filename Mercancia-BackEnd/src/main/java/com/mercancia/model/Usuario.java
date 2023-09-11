@@ -7,19 +7,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "usuarios")
+@Table (name = "usuario")
 public class Usuario{
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
 	private String nombre;
 	
 	public Usuario() {
+		
 	}
 	
-	public Usuario(String nombre, String user) {
+	public Usuario(String nombre) {
 		super();
 		this.nombre = nombre;
 	}  

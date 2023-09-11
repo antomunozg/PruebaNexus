@@ -22,9 +22,9 @@ public class Producto{
 	private int cantidad;
 	private Date fechaIngreso;
 	
-	@ManyToOne
-	@JoinColumn(name="id_usuario")
-	private Usuario usuario;
+	//@ManyToOne
+	//@JoinColumn(name = "usuario", referencedColumnName = "id")
+	//private Usuario usuario;
 	
 	
 	public Producto() {
@@ -35,7 +35,7 @@ public class Producto{
 		this.nombre = nombre;
 		this.cantidad = cantidad;
 		this.fechaIngreso = fechaIngreso;
-		this.usuario = usuario;
+		//this.usuario = usuario;
 	}
 
 	public int getId() {
@@ -69,7 +69,7 @@ public class Producto{
 	public void setFechaIngreso(Date fechaIngreso) {
 		this.fechaIngreso = fechaIngreso;
 	}
-
+/*
 	public Usuario getUsuario() {
 		return usuario;
 	}
@@ -77,6 +77,6 @@ public class Producto{
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
+	*/
 
 }
